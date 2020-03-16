@@ -1,11 +1,11 @@
 version: '3'
 services:
   nginx:
-    image: dockerhub nginx-4dvop nginximg
+    image: dockerhub nginx-4dvop-app nginximg
     ports:
       - "8080:8080"
   haproxy:
-    image: dockerhub haproxy-4dvop haproxyimg
+    image: dockerhub haproxy-4dvop-app haproxyimg
     ports:
       - "80:80"
     depends_on:
